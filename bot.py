@@ -28,5 +28,5 @@ def send_message(chat_id, text):
     payload = {"chat_id": chat_id, "text": text}
     requests.post(url, json=payload)
 
-if name == "__main__":
+if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
