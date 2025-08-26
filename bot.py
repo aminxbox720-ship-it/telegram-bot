@@ -1,7 +1,7 @@
 from flask import Flask, request
 import requests
 
-TOKEN = "8107824962:AAHrrO3uq8ZltBcv8TD6DAhF5pSI7MWjFEI"
+TOKEN = "توکن_بات_خودت"
 URL = f"https://api.telegram.org/bot{TOKEN}/"
 
 app = Flask(name)
@@ -30,7 +30,3 @@ def send_message(chat_id, text):
 
 if name == "main":
     app.run(host="0.0.0.0", port=5000)
-
-
-
-#123456
