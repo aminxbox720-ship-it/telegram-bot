@@ -1,10 +1,10 @@
 from flask import Flask, request
 import requests
 
-TOKEN = "توکن_بات_خودت"
+TOKEN = "8107824962:AAHrrO3uq8ZltBcv8TD6DAhF5pSI7MWjFEI"
 URL = f"https://api.telegram.org/bot{TOKEN}/"
 
-app = Flask(name)
+app = Flask(__name__)
 
 @app.route('/')
 def home():
@@ -28,5 +28,5 @@ def send_message(chat_id, text):
     payload = {"chat_id": chat_id, "text": text}
     requests.post(url, json=payload)
 
-if name == "main":
+if name == "__main__":
     app.run(host="0.0.0.0", port=5000)
