@@ -336,7 +336,6 @@ def main():
     app.add_error_handler(error_handler)
 
     print("🤖 Bot is running… (timeouts↑ & resilient)")
-    app.run_polling(allowed_updates=["message", "my_chat_member"])
 
 if __name__ == "__main__":
     main()
