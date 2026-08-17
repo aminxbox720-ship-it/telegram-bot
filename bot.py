@@ -21,7 +21,7 @@ from telegram.ext import (
 
 # -------------------- تنظیمات ایمن --------------------
 
-TOKEN = os.environ.get("8457728387")
+TOKEN = os.environ.get("8457728387:AAE6Alns-f_op9ZlSmKxEA1CUSAyBdwe4aM")
 
 # ادمین‌ها
 ADMINS = {5285345183}
