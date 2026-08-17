@@ -819,19 +819,17 @@ def health():
 
 
 @web.post(WEBHOOK_PATH)
-async def telegram_webhook():
+def telegram_webhook():
 
-    data = request.get_json(
-        force=True
-    )
+    data = request.get_json(force=True)
 
     update = Update.de_json(
         data,
         application.bot
     )
 
-    await application.process_update(
-        update
+    asyncio.run(
+        application.process_update(update)
     )
 
     return "OK", 200
