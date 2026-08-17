@@ -1,4 +1,8 @@
-python-telegram-bot==20.3
-Flask==2.3.2
-requests
-gunicorn
+telegram-bot/
+├── bot.py
+├── requirements.txt
+├── points.json
+├── triggers.json
+└── groups.json
+{`python-telegram-bot==22.8
+Flask==3.1.1`}
